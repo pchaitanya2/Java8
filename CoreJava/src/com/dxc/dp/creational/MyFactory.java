@@ -1,13 +1,13 @@
 package com.dxc.dp.creational;
 
-public class MyGaFactory {
+public class MyFactory {
 	
 	
 	public Object getClothtype(String type) {
 		
 		if(type=="Children") {
 			
-			return new ChildernCloths;
+		//	return new ChildernCloths;
 		}
 		
 		return null;
@@ -20,5 +20,3 @@ public class MyGaFactory {
 
 }
 
-
-class Childer

@@ -1,0 +1,32 @@
+Java compiler always looks for a matching functional interface to associate with the lambda expression from it’s
+surrounding context or target type. Compiler expects you to use lambda expresssion in following places such that it
+can determine the target type.
+• Variable declarations
+• Assignment statements
+• Return statements
+• Method or constructor arguments
+• Lambda expression bodies
+• Ternary expressions (?:) etc
+For method or constructor arguments, the compiler determines the target type with two other language features: overload
+resolution and type argument inference.
+
+
+Getting parallel stream
+
+parallelstream() method on collection classes or 
+parallel() on sequential stream
+
+
+First of all, a method reference can't be used for any method. 
+They can only be used to replace a single-method lambda expression.
+So to use a method reference, you first need a lambda expression with one method. And to use a lambda expression, you first need a functional interface, an interface with just one abstract method.
+
+In other words:
+
+Instead of using
+AN ANONYMOUS CLASS
+you can use
+A LAMBDA EXPRESSION
+And if this just calls one method, you can use
+A METHOD REFERENCE
+
